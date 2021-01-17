@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="images/favicon.ico">
+  </head>
+  <body style="margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  background: white;
+  color: #000066;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;">
+  <a href="index.html"><button type="button" class="btn-md btn-primary" name="button">Back</button></a><p>__</p>
+  <a href="verify.html"><button type="button" class="btn-md btn-primary" name="button">Refresh</button></a>
+
+    <h3>This is a demo site,User Id = Targaryen and password= 811213 </h3>
+    <div class="form-group">
+   <form class="verify" action="index.html" method="post">
+<br><br><br>
+     <label for="name"> User ID  :</label>
+     <input type="text" class="form-control" id="name" name="fname" value="" placeholder="Registered User ID"><br><br><br>
+     <label for="password"> Password :</label>
+     <input type="password" class="form-control" id="password" name="fname" value="" placeholder="Password"><br><br><br>
+
+<br><br>
+      <label for="name"> SUBMIT TO START </label><br><br>
+     <input class="btn-md" type="button" name="" value="SUBMIT" onclick="msg()"><br>
+
+
+   </form>
+   <script>
+   function myFunction(){
+     alert("Details Submitted , Wait for Confirmation, press enter now !");
+   }
+     function msg(){
+       const u="Targaryen"
+       const p ="811213"
+       var username = document.getElementById("name").value
+       var password = document.getElementById("password").value
+       if(username == u && password == p){
+         alert(username + " is logged in");
+         window.location.href = "index1.html"
+
+
+       }else{
+         alert("You are not registered to use the service.");
+       }
+
+     }
+
+   </script>
+  </div>
+
+  </body>
+</html>
